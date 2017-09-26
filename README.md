@@ -1,3 +1,11 @@
 # Todo Desktop APP
+```
+// Install dependecies
+$ npm install 
+```
 
-under progress...
+```
+// Launch app
+$ npm start
+```
+
