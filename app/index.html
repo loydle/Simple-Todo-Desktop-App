@@ -1,0 +1,37 @@
+<html>
+		<head>
+				<title>My todo list</title>
+		</head>
+
+		<body>
+				<h1>Todo:</h1>
+				<form id="new-todo-form"  action="#" method="POST">
+					<input type="text" name="new-todo" placeholder="Something to do...">
+					<input type="submit" value="Send">
+				</form>
+
+
+				<div id="todo-list">
+						<ul>
+							
+						</ul>
+				</div>
+		<script>
+
+			// global variables node elements
+			var form = document.getElementById('new-todo-form')
+			var todoList = document.querySelector('#todo-list ul')
+			
+			form.addEventListener('submit', (e) => {
+				e.preventDefault()
+				var newTodo = form.elements.namedItem('new-todo').value 
+				var li = document.createElement('li')
+				li.innerHTML = newTodo 
+				todoList.appendChild(li)
+			})
+
+		</script>
+		</body>
+</html>
+
+
